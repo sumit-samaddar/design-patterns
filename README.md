@@ -5,3 +5,5 @@
 4. Prototype - Bean scopes in Spring.
 5. Proxy - Spring Aspect Oriented Programming support
 6. Template Method Pattern - JdbcTemplate, HibernateTemplate etc
+7. Bridge Pattern.
+9. Builder Pattern.

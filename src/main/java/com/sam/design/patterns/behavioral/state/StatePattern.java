@@ -1,6 +1,6 @@
 package com.sam.design.patterns.behavioral.state;
 
-public class StateDemo {
+public class StatePattern {
 
     public static void main(String[] args) {
 

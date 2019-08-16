@@ -2,7 +2,7 @@ package com.sam.design.patterns.behavioral.mediator;
 
 public interface ChatMediator {
 
-	public void sendMessage(String msg, User user);
+    void sendMessage(String msg, User user);
 
-	void addUser(User user);
+    void addUser(User user);
 }

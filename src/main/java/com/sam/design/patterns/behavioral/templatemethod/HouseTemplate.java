@@ -1,22 +1,25 @@
 package com.sam.design.patterns.behavioral.templatemethod;
 
+import org.apache.log4j.Logger;
+
 /**
  * @author sumit
  *
  */
 public abstract class HouseTemplate {
+	final static Logger log = Logger.getLogger(HouseTemplate.class);
 	// template method, final so subclasses can't override
 	public final void buildHouse() {
 		buildFoundation();
 		buildPillars();
 		buildWalls();
 		buildWindows();
-		System.out.println("House is built.");
+		log.info("House is built.");
 	}
 
 	// default implementation
 	private void buildWindows() {
-		System.out.println("Building Glass Windows");
+		log.info("Building Glass Windows");
 	}
 
 	// methods to be implemented by subclasses
@@ -25,6 +28,6 @@ public abstract class HouseTemplate {
 	public abstract void buildPillars();
 
 	private void buildFoundation() {
-		System.out.println("Building foundation with cement,iron rods and sand");
+		log.info("Building foundation with cement,iron rods and sand");
 	}
 }

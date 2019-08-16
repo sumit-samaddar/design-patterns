@@ -20,7 +20,7 @@ public class Channel {
 	
 	@Override
 	public String toString(){
-		return "Frequency="+this.frequency+", Type="+this.TYPE;
+		return "[Frequency = "+this.frequency+", Type = "+this.TYPE+"]";
 	}
 	
 }

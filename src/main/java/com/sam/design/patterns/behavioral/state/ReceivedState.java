@@ -1,20 +1,21 @@
 package com.sam.design.patterns.behavioral.state;
 
+import org.apache.log4j.Logger;
+
 public class ReceivedState implements PackageState {
 
-    @Override
+    final static Logger log = Logger.getLogger(ReceivedState.class);
+
     public void next(Package pkg) {
-        System.out.println("This package is already received by a client.");
+        log.info("This package is already received by a client.");
     }
 
-    @Override
     public void prev(Package pkg) {
         pkg.setState(new DeliveredState());
     }
 
-    @Override
     public void printStatus() {
-        System.out.println("Package was received by client.");
+        log.info("Package was received by client.");
     }
 
     @Override

@@ -1,6 +1,10 @@
 package com.sam.design.patterns.behavioral.state;
 
+import org.apache.log4j.Logger;
+
 public class OrderedState implements PackageState {
+
+    final static Logger log = Logger.getLogger(OrderedState.class);
 
     public void next(Package pkg) {
         pkg.setState(new DeliveredState());
@@ -8,12 +12,12 @@ public class OrderedState implements PackageState {
 
 
     public void prev(Package pkg) {
-        System.out.println("The package is in it's root state.");
+        log.error("The package is in it's root state.");
     }
 
 
     public void printStatus() {
-        System.out.println("Package ordered, not delivered to the office yet.");
+        log.info("Package ordered, not delivered to the office yet.");
     }
 
 

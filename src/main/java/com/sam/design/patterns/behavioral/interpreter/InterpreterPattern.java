@@ -1,11 +1,15 @@
 package com.sam.design.patterns.behavioral.interpreter;
 
+import com.sam.design.patterns.behavioral.state.DeliveredState;
+import org.apache.log4j.Logger;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Scanner;
 
-public class InterpreterDesignPattern {
+public class InterpreterPattern {
+
+    final static Logger log = Logger.getLogger(DeliveredState.class);
 
     public static void main(String[] args) {
 
@@ -19,15 +23,13 @@ public class InterpreterDesignPattern {
 
         List<AbstractFormat> formatOrderList = getFormatOrder(format);
 
-        System.out.println("Input : " + format.getFormat() + " : " + new Date());
+        log.info("Input : " + format.getFormat() + " : " + new Date());
 
         for (AbstractFormat abstractFormat : formatOrderList) {
             abstractFormat.execute(format);
-            System.out.println(abstractFormat.getClass().getName() + " Executed:" + format.getFormat());
-
+            log.info(abstractFormat.getClass().getName() + " Executed:" + format.getFormat());
         }
-
-        System.out.println("Output : " + format.getFormat());
+        log.info("Output : " + format.getFormat());
     }
 
     private static ArrayList getFormatOrder(Format format) {

@@ -33,7 +33,7 @@
 ### Memento Pattern
     Memento design pattern is used when we want to save the state of an object so that we can restore later on.
 ### Iterator Pattern
-    iterator pattern in one of the behavioral pattern and it&#39;s used to provide a standard way to traverse through a group of Objects.
+    iterator pattern in one of the behavioral pattern and it&#39;s used to provide a standard way to traverse through a group of Objects. For example - channel Iterator
 ### Interpreter Pattern
     is used to defines a grammatical representation for a language and provides an interpreter to deal with this grammar. For example - Interpret user input and convert accordingly.
 ### Visitor Pattern

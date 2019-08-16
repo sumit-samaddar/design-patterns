@@ -1,6 +1,10 @@
 package com.sam.design.patterns.behavioral.state;
 
+import org.apache.log4j.Logger;
+
 public class DeliveredState implements PackageState {
+
+    final static Logger log = Logger.getLogger(DeliveredState.class);
 
     public void next(Package pkg) {
         pkg.setState(new ReceivedState());
@@ -11,7 +15,7 @@ public class DeliveredState implements PackageState {
     }
 
     public void printStatus() {
-        System.out.println("Package delivered to post office, not received yet.");
+        log.info("Package delivered to post office, not received yet.");
     }
 
     @Override

@@ -35,8 +35,8 @@
 ### Iterator Pattern
     iterator pattern in one of the behavioral pattern and it&#39;s used to provide a standard way to traverse through a group of Objects.
 ### Interpreter Pattern
-    is used to defines a grammatical representation for a language and provides an interpreter to deal with this grammar.
+    is used to defines a grammatical representation for a language and provides an interpreter to deal with this grammar. For example - Interpret user input and convert accordingly.
 ### Visitor Pattern
-    Visitor pattern is used when we have to perform an operation on a group of similar kind of Objects. With the help of visitor pattern, we can move the operational logic from the objects to another class.
+    Visitor pattern is used when we have to perform an operation on a group of similar kind of Objects. With the help of visitor pattern, we can move the operational logic from the objects to another class. For example - Dr visiting group of students in school.
 ### State Pattern
-    State design pattern is used when an Object change its behavior based on its internal state.
+    State design pattern is used when an Object change its behavior based on its internal state. For example - Courier package change package state from Orderd -> Delivered -> Recived.

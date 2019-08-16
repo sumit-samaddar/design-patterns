@@ -3,4 +3,14 @@
   <groupId>com.sam.design.patterns</groupId>
   <artifactId>design-patterns</artifactId>
   <version>1.0</version>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.8</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
 </project>

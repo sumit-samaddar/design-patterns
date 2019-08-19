@@ -4,7 +4,7 @@ package com.sam.design.patterns.creational.builder;
  * @author sumit
  *
  */
-public class TestBuilderPattern {
+public class BuilderPattern {
 
 	public static void main(String[] args) {
 		//Using builder to get the object in a single line of code and 

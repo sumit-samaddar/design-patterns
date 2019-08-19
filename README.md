@@ -44,27 +44,27 @@
     Decorator design pattern is used to modify the functionality of an object at runtime.
 
 # Behavioral Design Patterns
-### Template Method Pattern 
+### Template Method Pattern -
     Template Method is a behavioral design pattern and it&#39;s used to create a method stub and 
     deferring some of the steps of implementation to the subclasses. Template method defines the 
     steps to execute an algorithm and it can provide default implementation that might be common 
     for all or some of the subclasses.
-### Mediator Pattern
+### Mediator Pattern -
     Mediator design pattern is used to provide a centralized communication medium between different 
     objects in a system.
-### Memento Pattern
+### Memento Pattern -
     Memento design pattern is used when we want to save the state of an object so that we can restore later on.
-### Iterator Pattern
+### Iterator Pattern -
     iterator pattern in one of the behavioral pattern and it&#39;s used to provide a standard way 
     to traverse through a group of Objects. For example - channel Iterator
-### Interpreter Pattern
+### Interpreter Pattern -
     Interpreter Pattern is used to defines a grammatical representation for a language and provides 
     an interpreter to deal with this grammar. 
     For example - Interpret user input and convert accordingly.
-### Visitor Pattern
+### Visitor Pattern -
     Visitor pattern is used when we have to perform an operation on a group of similar kind of Objects. 
     With the help of visitor pattern, we can move the operational logic from the objects to another class. 
     For example - Dr visiting group of students in school.
-### State Pattern
+### State Pattern -
     State design pattern is used when an Object change its behavior based on its internal state. 
     For example - Courier package change package state from Orderd -> Delivered -> Recived.

@@ -1,6 +1,9 @@
 package com.design.patterns.creational.abstructfactory;
 
-
+/**
+ * @author sumit
+ *
+ */
 public class AbstractFactoryPattern {
 
 	public static void main(String[] args) {

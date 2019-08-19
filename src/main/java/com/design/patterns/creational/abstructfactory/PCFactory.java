@@ -1,5 +1,9 @@
 package com.design.patterns.creational.abstructfactory;
 
+/**
+ * @author sumit
+ *
+ */
 public class PCFactory implements ComputerAbstractFactory {
 
 	private String ram;

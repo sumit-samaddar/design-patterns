@@ -37,6 +37,10 @@ public class Computer {
 		this.isBluetoothEnabled = builder.isBluetoothEnabled;
 	}
 
+	/**
+	 * @author sumit
+	 *
+	 */
 	// Builder Class
 	public static class ComputerBuilder {
 

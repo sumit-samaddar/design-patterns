@@ -1,5 +1,9 @@
 package com.design.patterns.creational.abstructfactory;
 
+/**
+ * @author sumit
+ *
+ */
 public abstract class Computer {
     
     public abstract String getRAM();

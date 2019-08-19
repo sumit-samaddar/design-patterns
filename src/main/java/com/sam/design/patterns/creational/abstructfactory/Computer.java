@@ -1,4 +1,4 @@
-package sam.design.pattern.abstractfactory;
+package com.sam.design.pattern.abstractfactory;
 
 public abstract class Computer {
     

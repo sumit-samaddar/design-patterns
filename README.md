@@ -1,9 +1,11 @@
 # Creational Design Patterns
 
 ### Singleton Pattern
-    Singleton pattern restricts the instantiation of a class and ensures that only one instance of the class exists in the java virtual machine.
+    Singleton pattern restricts the instantiation of a class and ensures that only one
+    instance of the class exists in the java virtual machine.
 ### Factory Pattern
-    Factory design pattern is used when we have a super class with multiple sub-classes and based on input, we need to return one of the sub-class.
+    Factory design pattern is used when we have a super class with multiple sub-classes
+    and based on input, we need to return one of the sub-class.
 ### Abstract Factory Pattern
     Abstract Factory pattern is similar to Factory pattern and its factory of factories
 ### Builder Pattern

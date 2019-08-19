@@ -1,7 +1,7 @@
-package sam.design.pattern.abstractfactory;
+package com.sam.design.patterns.creational.abstructfactory;
 
 public interface ComputerAbstractFactory {
 
-	public Computer createComputer();
+	public com.sam.design.pattern.abstractfactory.Computer createComputer();
 
 }

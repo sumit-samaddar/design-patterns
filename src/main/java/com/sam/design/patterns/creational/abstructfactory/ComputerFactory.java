@@ -1,4 +1,4 @@
-package sam.design.pattern.abstractfactory;
+package com.sam.design.patterns.creational.abstructfactory;
 
 public class ComputerFactory {
 

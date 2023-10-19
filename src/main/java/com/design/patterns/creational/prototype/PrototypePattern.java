@@ -1,37 +1,29 @@
 package com.design.patterns.creational.prototype;
 
 import java.util.List;
-
-/*
- * 
- * It would be easy to understand prototype design pattern with an example. Suppose we have an Object that loads data 
- * from database. Now we need to modify this data in our program multiple times, so it�s not a good idea to create the 
- * Object using new keyword and load all the data again from database.The better approach would be to clone the existing 
- * object into a new object and then do the data manipulation.
- */
-
+import java.util.logging.Logger;
 
 /**
  * @author sumit
- *
+ * Creational Design Pattern
+ * Prototype pattern is used when the Object creation is a costly affair and requires a lot of
+ * time ,resources, and you have a similar object already existing.
  */
 public class PrototypePattern {
+    private static final Logger log = Logger.getLogger(PrototypePattern.class.getName());
 
-	public static void main(String[] args) throws CloneNotSupportedException {
-		Employees emps = new Employees();
-		emps.loadData();
-		
-		//Use the clone method to get the Employee object
-		Employees empsNew = (Employees) emps.clone();
-		Employees empsNew1 = (Employees) emps.clone();
-		List<String> list = empsNew.getEmpList();
-		list.add("John");
-		List<String> list1 = empsNew1.getEmpList();
-		list1.remove("Pankaj");
-		
-		System.out.println("emps List: "+emps.getEmpList());
-		System.out.println("empsNew List: "+list);
-		System.out.println("empsNew1 List: "+list1);
-	}
-
+    public static void main(String[] args) throws CloneNotSupportedException {
+        Employee employee = new Employee();
+        employee.loadData();
+        //Use the clone method to get the Employee object
+        Employee employee1 = (Employee) employee.clone();
+        Employee employee2 = (Employee) employee.clone();
+        List<String> list = employee1.getList();
+        list.add("John");
+        List<String> list1 = employee2.getList();
+        list1.remove("Pankaj");
+        log.info("employee List: " + employee.getList());
+        log.info("employee1 List: " + list);
+        log.info("employee2 List: " + list1);
+    }
 }

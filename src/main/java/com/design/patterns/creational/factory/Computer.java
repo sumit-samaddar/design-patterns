@@ -7,7 +7,6 @@ package com.design.patterns.creational.factory;
  * and based on input, we need to return one of the sub-class.
  */
 public abstract class Computer {
-
     public abstract String getRAM();
 
     public abstract String getHDD();

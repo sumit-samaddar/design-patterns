@@ -12,27 +12,29 @@ import java.util.logging.Logger;
  * for all or some of the subclasses.
  */
 public abstract class HouseTemplate {
-	final static Logger log = Logger.getLogger(HouseTemplate.class.getName());
-	// template method, final so subclasses can't override
-	public final void buildHouse() {
-		buildFoundation();
-		buildPillars();
-		buildWalls();
-		buildWindows();
-		log.info("House is built.");
-	}
+    final static Logger log = Logger.getLogger(HouseTemplate.class.getName());
 
-	// default implementation
-	private void buildWindows() {
-		log.info("Building Glass Windows");
-	}
+    // template method, final so subclasses can't override
+    public final void buildHouse() {
+        buildFoundation();
+        buildWindows();
+        buildPillars();
+        buildWalls();
+        log.info("House is built.");
+    }
 
-	// methods to be implemented by subclasses
-	public abstract void buildWalls();
+    // default implementation
+    private void buildWindows() {
+        log.info("Building Glass Windows");
+    }
 
-	public abstract void buildPillars();
+    private void buildFoundation() {
+        log.info("Building foundation with cement,iron rods and sand");
+    }
 
-	private void buildFoundation() {
-		log.info("Building foundation with cement,iron rods and sand");
-	}
+    // methods to be implemented by subclasses
+    public abstract void buildWalls();
+
+    // methods to be implemented by subclasses
+    public abstract void buildPillars();
 }

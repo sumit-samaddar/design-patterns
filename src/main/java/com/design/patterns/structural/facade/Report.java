@@ -19,7 +19,6 @@ public class Report {
     private ReportData data;
     private ReportFooter footer;
 
-
     public ReportHeader getHeader() {
         return header;
     }

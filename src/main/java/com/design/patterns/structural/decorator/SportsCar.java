@@ -7,12 +7,13 @@ import org.apache.log4j.Logger;
  */
 public class SportsCar extends CarDecorator {
 	final static Logger log = Logger.getLogger(SportsCar.class);
+
 	public SportsCar(Car c) {
 		super(c);
 	}
 
 	@Override
-	public void assemble(){
+	public void assemble() {
 		super.assemble();
 		log.info(" Adding features of Sports Car.");
 	}

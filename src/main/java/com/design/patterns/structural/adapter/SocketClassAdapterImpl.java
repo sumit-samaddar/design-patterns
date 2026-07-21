@@ -1,24 +1,22 @@
 package com.design.patterns.structural.adapter;
 
 //Using inheritance for adapter pattern
-public class SocketClassAdapterImpl extends Socket implements SocketAdapter{
+public class SocketClassAdapterImpl extends Socket implements SocketAdapter {
 
 	public Volt get120Volt() {
-		return getVolt();
+		return super.getVolt();
 	}
 
 	public Volt get12Volt() {
-		Volt v= getVolt();
-		return convertVolt(v,10);
+		return convertVolt(this.get120Volt(), 10);
 	}
 
 	public Volt get3Volt() {
-		Volt v= getVolt();
-		return convertVolt(v,40);
+		return convertVolt(this.get120Volt(), 40);
 	}
-	
+
 	private Volt convertVolt(Volt v, int i) {
-		return new Volt(v.getVolts()/i);
+		return new Volt(v.getVolts() / i);
 	}
 
 }

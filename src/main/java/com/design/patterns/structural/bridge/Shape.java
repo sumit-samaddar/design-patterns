@@ -6,10 +6,10 @@ package com.design.patterns.structural.bridge;
  */
 public abstract class Shape {
 	// Composition - implementor
-	protected Color color;
+	protected Colour color;
 
 	// constructor with implementor as input argument
-	public Shape(Color c) {
+	public Shape(Colour c) {
 		this.color = c;
 	}
 

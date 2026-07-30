@@ -1,6 +1,7 @@
 package com.design.patterns.behavioral.templatemethod;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author sumit
@@ -8,7 +9,7 @@ import org.apache.log4j.Logger;
  */
 public class GlassHouse extends HouseTemplate {
 
-	final static Logger log = Logger.getLogger(GlassHouse.class);
+	final static Logger log = LoggerFactory.getLogger(GlassHouse.class);
 
 	public void buildWalls() {
 		log.info("Building Glass Walls");

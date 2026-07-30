@@ -1,13 +1,14 @@
 package com.design.patterns.creational.builder;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author sumit
  *
  */
 public class BuilderDemo {
-	final static Logger log = Logger.getLogger(BuilderDemo.class);
+	final static Logger log = LoggerFactory.getLogger(BuilderDemo.class);
 
 	public static void main(String[] args) {
 		// Using builder to get the object in a single line of code and
@@ -16,7 +17,7 @@ public class BuilderDemo {
 				"500 GB", "2 GB").setBluetoothEnabled(true)
 				.setGraphicsCardEnabled(true).build();
 
-		log.info(comp);
+		log.info(String.valueOf(comp));
 	}
 
 }

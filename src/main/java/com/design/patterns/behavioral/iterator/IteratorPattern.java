@@ -1,10 +1,11 @@
 package com.design.patterns.behavioral.iterator;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class IteratorPattern {
 
-	final static Logger log = Logger.getLogger(IteratorPattern.class);
+	final static Logger log = LoggerFactory.getLogger(IteratorPattern.class);
 
 	public static void main(String[] args) {
 		ChannelCollection channels = populateChannels();

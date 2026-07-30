@@ -1,10 +1,11 @@
 package com.design.patterns.behavioral.state;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class DeliveredState implements PackageState {
 
-    final static Logger log = Logger.getLogger(DeliveredState.class);
+    final static Logger log = LoggerFactory.getLogger(DeliveredState.class);
 
     public void next(Package pkg) {
         pkg.setState(new ReceivedState());

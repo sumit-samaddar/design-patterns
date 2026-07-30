@@ -1,9 +1,10 @@
 package com.design.patterns.creational.abstructfactory;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class WindowsButton implements Button {
-    final static Logger log = Logger.getLogger(WindowsButton.class);
+    final static Logger log = LoggerFactory.getLogger(WindowsButton.class);
 
     @Override
     public void click() {

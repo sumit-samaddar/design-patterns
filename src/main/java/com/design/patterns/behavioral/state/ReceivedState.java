@@ -1,10 +1,11 @@
 package com.design.patterns.behavioral.state;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class ReceivedState implements PackageState {
 
-    final static Logger log = Logger.getLogger(ReceivedState.class);
+    final static Logger log = LoggerFactory.getLogger(ReceivedState.class);
 
     public void next(Package pkg) {
         log.info("This package is already received by a client.");

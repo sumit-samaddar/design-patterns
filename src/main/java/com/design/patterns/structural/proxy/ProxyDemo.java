@@ -1,9 +1,10 @@
 package com.design.patterns.structural.proxy;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class ProxyDemo {
-    final static Logger log = Logger.getLogger(ProxyDemo.class);
+    final static Logger log = LoggerFactory.getLogger(ProxyDemo.class);
 
     public static void main(String[] args) {
 

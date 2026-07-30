@@ -3,10 +3,11 @@ package com.design.patterns.structural.composite;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Drawing implements Shape {
-	final static Logger log = Logger.getLogger(Drawing.class);
+	final static Logger log = LoggerFactory.getLogger(Drawing.class);
 	// collection of Shapes
 	private List<Shape> shapes = new ArrayList<Shape>();
 

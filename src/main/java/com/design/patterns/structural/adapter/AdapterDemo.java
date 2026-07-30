@@ -1,6 +1,7 @@
 package com.design.patterns.structural.adapter;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /*One of the great real life example of Adapter design pattern is mobile charger. Mobile battery needs 3 volts to 
  * charge but the normal socket produces either 120V (US) or 240V (India). So the mobile charger works as an adapter 
@@ -11,7 +12,7 @@ import org.apache.log4j.Logger;
  *
  */
 public class AdapterDemo {
-	final static Logger log = Logger.getLogger(AdapterDemo.class);
+	final static Logger log = LoggerFactory.getLogger(AdapterDemo.class);
 
 	public static void main(String[] args) {
 		testClassAdapter();

@@ -1,9 +1,10 @@
 package com.design.patterns.structural.composite;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class CompositeDemo {
-	final static Logger log = Logger.getLogger(CompositeDemo.class);
+	final static Logger log = LoggerFactory.getLogger(CompositeDemo.class);
 
 	public static void main(String[] args) {
 		Shape tri = new Triangle();

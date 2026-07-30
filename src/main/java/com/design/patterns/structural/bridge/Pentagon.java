@@ -1,13 +1,14 @@
 package com.design.patterns.structural.bridge;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author sumit
  *
  */
 public class Pentagon extends Shape {
-	final static Logger log = Logger.getLogger(Pentagon.class);
+	final static Logger log = LoggerFactory.getLogger(Pentagon.class);
 
 	public Pentagon(Colour c) {
 		super(c);

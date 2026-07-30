@@ -1,9 +1,10 @@
 package com.design.patterns.creational.singleton;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class SingletonDemo {
-    final static Logger log = Logger.getLogger(SingletonDemo.class);
+    final static Logger log = LoggerFactory.getLogger(SingletonDemo.class);
     public static void main(String[] args) {
         StaticBlockSingleton instance1 = StaticBlockSingleton.getInstance();
         StaticBlockSingleton instance2 = StaticBlockSingleton.getInstance();

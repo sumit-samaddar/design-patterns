@@ -1,12 +1,13 @@
 package com.design.patterns.structural.decorator;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author sumit
  */
 public class SportsCar extends CarDecorator {
-	final static Logger log = Logger.getLogger(SportsCar.class);
+	final static Logger log = LoggerFactory.getLogger(SportsCar.class);
 
 	public SportsCar(Car c) {
 		super(c);

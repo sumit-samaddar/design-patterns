@@ -5,7 +5,8 @@ package com.design.patterns.behavioral.templatemethod;
  * common for all or some of the subclasses.
  */
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author sumit
@@ -13,7 +14,7 @@ import org.apache.log4j.Logger;
  */
 public class TemplatePattern {
 
-	final static Logger log = Logger.getLogger(TemplatePattern.class);
+	final static Logger log = LoggerFactory.getLogger(TemplatePattern.class);
 
 	public static void main(String[] args) {
 

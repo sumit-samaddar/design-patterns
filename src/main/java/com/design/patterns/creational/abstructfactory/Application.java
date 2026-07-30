@@ -1,9 +1,10 @@
 package com.design.patterns.creational.abstructfactory;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Application {
-    final static Logger log = Logger.getLogger(Application.class);
+    final static Logger log = LoggerFactory.getLogger(Application.class);
 	private Button button;
 	private Checkbox checkbox;
 

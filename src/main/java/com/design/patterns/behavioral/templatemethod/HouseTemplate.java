@@ -1,13 +1,14 @@
 package com.design.patterns.behavioral.templatemethod;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author sumit
  *
  */
 public abstract class HouseTemplate {
-	final static Logger log = Logger.getLogger(HouseTemplate.class);
+	final static Logger log = LoggerFactory.getLogger(HouseTemplate.class);
 	// template method, final so subclasses can't override
 	public final void buildHouse() {
 		buildFoundation();

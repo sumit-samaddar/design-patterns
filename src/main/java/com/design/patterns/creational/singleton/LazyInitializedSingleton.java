@@ -1,6 +1,7 @@
 package com.design.patterns.creational.singleton;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author sumit
@@ -8,7 +9,7 @@ import org.apache.log4j.Logger;
  */
 public class LazyInitializedSingleton {
 	private static LazyInitializedSingleton instance;
-	final static Logger log = Logger.getLogger(LazyInitializedSingleton.class);
+	final static Logger log = LoggerFactory.getLogger(LazyInitializedSingleton.class);
 	private LazyInitializedSingleton() {
 	}
 

@@ -1,14 +1,15 @@
 package com.design.patterns.creational.singleton;
 
 import org.apache.commons.lang3.exception.ExceptionUtils;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author sumit
  *
  */
 public class StaticBlockSingleton {
-    final static Logger log = Logger.getLogger(StaticBlockSingleton.class);
+    final static Logger log = LoggerFactory.getLogger(StaticBlockSingleton.class);
     private static StaticBlockSingleton instance;
     
     private StaticBlockSingleton(){}

@@ -1,6 +1,7 @@
 package com.design.patterns.structural.facade;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author sumit
@@ -14,7 +15,7 @@ enum ReportType {
  */
 public class Report {
 
-    final static Logger log = Logger.getLogger(Report.class);
+    final static Logger log = LoggerFactory.getLogger(Report.class);
     private ReportHeader header;
     private ReportData data;
     private ReportFooter footer;
@@ -70,7 +71,7 @@ class ReportFooter {
  */
 class ReportWriter {
 
-    final static Logger log = Logger.getLogger(ReportWriter.class);
+    final static Logger log = LoggerFactory.getLogger(ReportWriter.class);
 
     public void writeHtmlReport(Report report) {
         log.info("HTML Report written");

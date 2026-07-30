@@ -1,7 +1,10 @@
 package com.design.patterns.behavioral.visitor;
 
-public class Doctor implements Visitor {
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+public class Doctor implements Visitor {
+    final static Logger log = LoggerFactory.getLogger(Doctor.class);
     private String nameOfDoctor;
 
     public Doctor(String nameOfDoctor) {
@@ -17,9 +20,9 @@ public class Doctor implements Visitor {
     public void visit(Visitable visitable) {
         Student student = (Student) visitable;
         student.setHealthStatus("Good");
-        System.out.println("Doctor: " + this.getName() + " does the checkup of the student: "
-                + student.getName()
-                + " and Reported health is not bad so updated the health status as 'Bad'\n");
+        log.info("Doctor: {} does the checkup of the student: {} and Reported that student's  health is not {} ", 
+            this.getName(), student.getName(), student.getHealthStatus()
+            );
 
     }
 

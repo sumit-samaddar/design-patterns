@@ -1,14 +1,16 @@
+/**
+ * @author sumit
+ */
+
 package com.design.patterns.creational.singleton;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * @author sumit
- */
 public class ThreadSafeSingleton {
-    private static ThreadSafeSingleton instance;
     final static Logger log = LoggerFactory.getLogger(ThreadSafeSingleton.class);
+    private static ThreadSafeSingleton instance;
+
     private ThreadSafeSingleton() {
     }
 

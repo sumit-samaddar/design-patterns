@@ -1,9 +1,9 @@
-package com.design.patterns.structural.bridge;
-
 /**
  * @author sumit
- *
  */
+
+package com.design.patterns.structural.bridge;
+
 public abstract class Shape {
 	// Composition - implementor
 	protected Colour color;

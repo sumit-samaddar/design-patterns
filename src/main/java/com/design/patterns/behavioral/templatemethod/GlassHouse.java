@@ -1,12 +1,12 @@
+/**
+ * @author sumit
+ */
+
 package com.design.patterns.behavioral.templatemethod;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * @author sumit
- *
- */
 public class GlassHouse extends HouseTemplate {
 
 	final static Logger log = LoggerFactory.getLogger(GlassHouse.class);

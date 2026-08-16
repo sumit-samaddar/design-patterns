@@ -1,3 +1,7 @@
+/**
+ * @author sumit
+ */
+
 package com.design.patterns.behavioral.interpreter;
 
 import java.util.Date;
@@ -9,7 +13,7 @@ public class YearFormat extends AbstractFormat {
         String format1 = format.getFormat();
         Date date = format.getDate();
         Integer year = new Integer(date.getYear() + 2000);
-        String tempFormat = format1.replaceAll("YYYY", year.toString());
+        String tempFormat = format1.replaceAll("YYYY", String.valueOf(year));
         format.setFormat(tempFormat);
     }
 }

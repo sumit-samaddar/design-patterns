@@ -1,3 +1,7 @@
+/**
+ * @author sumit
+ */
+
 package com.design.patterns.behavioral.memento;
 
 public final class ArticleMemento {

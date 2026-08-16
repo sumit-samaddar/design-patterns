@@ -1,3 +1,8 @@
+/**
+ * @author sumit
+ * Controls access to an object through a representative proxy layer.
+ */
+
 package com.design.patterns.structural.proxy;
 
 import org.slf4j.Logger;

@@ -1,12 +1,12 @@
+/**
+ * @author sumit
+ */
+
 package com.design.patterns.structural.bridge;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * @author sumit
- *
- */
 public class Pentagon extends Shape {
 	final static Logger log = LoggerFactory.getLogger(Pentagon.class);
 

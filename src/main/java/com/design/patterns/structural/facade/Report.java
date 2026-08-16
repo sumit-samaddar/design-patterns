@@ -1,11 +1,12 @@
+/**
+ * @author sumit
+ */
+
 package com.design.patterns.structural.facade;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * @author sumit
- */
 enum ReportType {
     PDF, HTML
 }
@@ -29,17 +30,9 @@ public class Report {
         this.header = header;
     }
 
-    public ReportData getData() {
-        return data;
-    }
-
     public void setData(ReportData data) {
         log.info("Setting report data");
         this.data = data;
-    }
-
-    public ReportFooter getFooter() {
-        return footer;
     }
 
     public void setFooter(ReportFooter footer) {

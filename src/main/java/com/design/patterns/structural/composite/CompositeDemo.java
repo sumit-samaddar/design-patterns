@@ -1,3 +1,8 @@
+/**
+ * @author sumit
+ * Treats individual and grouped objects uniformly in a tree-like structure.
+ */
+
 package com.design.patterns.structural.composite;
 
 import org.slf4j.Logger;

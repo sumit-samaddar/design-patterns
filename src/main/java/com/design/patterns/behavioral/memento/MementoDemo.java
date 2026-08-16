@@ -1,12 +1,16 @@
+/**
+ * @author sumit
+ * Captures and restores object state without violating encapsulation.
+ */
+
 package com.design.patterns.behavioral.memento;
 
-import com.design.patterns.behavioral.iterator.IteratorPattern;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class MementoPattern {
+public class MementoDemo {
 
-    final static Logger log = LoggerFactory.getLogger(IteratorPattern.class);
+    final static Logger log = LoggerFactory.getLogger(MementoDemo.class);
 
     public static void main(String[] args) {
         Article article = new Article(1, "My Article");

@@ -1,8 +1,9 @@
-package com.design.patterns.structural.decorator;
-
 /**
  * @author sumit
  */
+
+package com.design.patterns.structural.decorator;
+
 public class CarDecorator implements Car {
 
     protected Car car;

@@ -1,4 +1,11 @@
+/**
+ * @author sumit
+ */
+
 package com.design.patterns.behavioral.iterator;
 
-public class Iterator {
+interface Iterator<T> {
+    boolean hasNext();
+
+    T next();
 }

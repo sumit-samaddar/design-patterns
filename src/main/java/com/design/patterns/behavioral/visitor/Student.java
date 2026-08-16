@@ -1,8 +1,12 @@
+/**
+ * @author sumit
+ */
+
 package com.design.patterns.behavioral.visitor;
 
 public class Student implements Visitable {
 
-    private String nameOfStudent;
+    private final String nameOfStudent;
 
     private String healthStatus;
 

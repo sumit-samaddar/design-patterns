@@ -1,4 +1,9 @@
+/**
+ * @author sumit
+ */
+
 package com.design.patterns.behavioral.iterator;
 
-public class EmployeeCollection {
+interface EmployeeCollection<T> {
+    Iterator<T> createIterator();
 }

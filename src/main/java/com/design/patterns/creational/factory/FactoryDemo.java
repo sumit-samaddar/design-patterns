@@ -1,12 +1,13 @@
+/**
+ * @author sumit
+ * Creates objects through a common factory interface without exposing construction logic.
+ */
+
 package com.design.patterns.creational.factory;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * @author sumit
- *
- */
 public class FactoryDemo {
 	final static Logger log = LoggerFactory.getLogger(FactoryDemo.class);
 	public static void main(String[] args) {

@@ -1,8 +1,9 @@
-package com.design.patterns.structural.facade;
-
 /**
  * @author sumit
  */
+
+package com.design.patterns.structural.facade;
+
 public class ReportGeneratorFacade {
     public void generateReport(ReportType type) {
         // Create report

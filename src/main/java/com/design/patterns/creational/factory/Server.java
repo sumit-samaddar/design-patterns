@@ -1,9 +1,9 @@
-package com.design.patterns.creational.factory;
-
 /**
  * @author sumit
- *
  */
+
+package com.design.patterns.creational.factory;
+
 public class Server extends Computer {
 
 	private String ram;

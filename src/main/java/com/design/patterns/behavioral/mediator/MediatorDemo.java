@@ -1,6 +1,11 @@
+/**
+ * @author sumit
+ * Coordinates communication between objects through a central mediator.
+ */
+
 package com.design.patterns.behavioral.mediator;
 
-public class MediatorPattern {
+public class MediatorDemo {
 
     public static void main(String[] args) {
         ChatMediator mediator = new ChatMediatorImpl();

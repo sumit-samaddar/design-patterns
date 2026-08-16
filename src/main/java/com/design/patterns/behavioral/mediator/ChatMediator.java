@@ -1,3 +1,7 @@
+/**
+ * @author sumit
+ */
+
 package com.design.patterns.behavioral.mediator;
 
 public interface ChatMediator {

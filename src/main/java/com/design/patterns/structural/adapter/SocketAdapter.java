@@ -1,9 +1,9 @@
-package com.design.patterns.structural.adapter;
-
 /**
  * @author sumit
- *
  */
+
+package com.design.patterns.structural.adapter;
+
 public interface SocketAdapter {
 
 	public Volt get120Volt();

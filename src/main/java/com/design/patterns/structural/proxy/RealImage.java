@@ -1,3 +1,7 @@
+/**
+ * @author sumit
+ */
+
 package com.design.patterns.structural.proxy;
 
 import org.slf4j.Logger;
@@ -13,11 +17,11 @@ public class RealImage implements Image {
     }
 
     private void loadFromDisk() {
-        log.info("Loading image: " + fileName);
+        log.info("Loading image: {}", fileName);
     }
 
     @Override
     public void display() {
-        log.info("Displaying image: " + fileName);
+        log.info("Displaying image: {}", fileName);
     }
 }

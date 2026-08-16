@@ -1,7 +1,11 @@
+/**
+ * @author sumit
+ */
+
 package com.design.patterns.structural.adapter;
 
 //Using inheritance for adapter pattern
-public class SocketClassAdapterImpl extends Socket implements SocketAdapter {
+public class SocketAdapterImpl extends Socket implements SocketAdapter {
 
 	public Volt get120Volt() {
 		return super.getVolt();
